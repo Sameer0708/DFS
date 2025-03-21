@@ -1,0 +1,99 @@
+.top {
+  margin: 40px;
+  text-align: center; /* Center align content */
+}
+
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.choose {
+  background-color: #00b712; /* Fallback color */
+  background-image: linear-gradient(-180deg, #5aff15, #00b712); /* Gradient */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Slightly rounded corners */
+  color: #ffffff; /* White text */
+  padding: 12px 22px; /* More padding for better clickability */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+  outline: none; /* Remove default outline */
+}
+
+.choose:hover {
+  background-image: linear-gradient(-180deg, #00b712, #5aff15); /* Reverse gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 223, 253, 0.4); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.choose:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+.choose:disabled {
+  background-color: #cccccc; /* Gray background for disabled state */
+  background-image: none; /* Remove gradient for disabled state */
+  color: #666666; /* Dark gray text for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+  box-shadow: none; /* Remove shadow for disabled state */
+  transform: none; /* Remove lift effect for disabled state */
+}
+
+.textArea {
+  color: white; /* White text */
+  font-size: 14px; /* Smaller font size for text */
+  margin-top: 10px; /* Add some spacing */
+  padding-left: 20px; /* Add padding to text area */
+  padding-right: 10px;
+}
+
+.upload {
+  background-color: #13aa52; /* Solid green background */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Slightly rounded corners */
+  color: #ffffff; /* White text */
+  padding: 10px 20px; /* More padding for better clickability */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.upload:hover {
+  background-color: #118a45; /* Darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.upload:active {
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+.upload:disabled,
+.upload[disabled] {
+  background-color: #cccccc; /* Gray background for disabled state */
+  color: #666666; /* Dark gray text for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+  box-shadow: none; /* Remove shadow for disabled state */
+  transform: none; /* Remove lift effect for disabled state */
+}
+
+div {
+  padding: 10px 20px; /* Add padding to divs */
+  text-align: center; /* Center align content */
+}
+
+/* Optional: Add a container for better spacing */
+.container {
+  max-width: 600px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding inside the container */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

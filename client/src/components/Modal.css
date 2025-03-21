@@ -1,0 +1,142 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better focus */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.modalContainer {
+  width: 500px;
+  min-height: 250px; /* Use min-height for flexibility */
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  animation: fadeIn 0.3s ease; /* Smooth fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.titleCloseBtn button:hover {
+  color: #333; /* Darker color on hover */
+}
+
+.modalContainer .body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  padding: 20px;
+}
+
+.modalContainer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+.modalContainer .footer button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modalContainer .footer button:first-child {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.modalContainer .footer button:first-child:hover {
+  background-color: #5a9cff; /* Lighter blue on hover */
+  box-shadow: 0 4px 8px rgba(92, 156, 255, 0.3); /* Shadow on hover */
+}
+
+#cancelBtn {
+  background-color: crimson;
+  color: white;
+}
+
+#cancelBtn:hover {
+  background-color: #ff4d4d; /* Lighter red on hover */
+  box-shadow: 0 4px 8px rgba(255, 77, 77, 0.3); /* Shadow on hover */
+}
+
+.address {
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  width: 350px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.address:hover {
+  border-color: #009ffd;
+  box-shadow: 0 4px 8px rgba(0, 159, 253, 0.2);
+}
+
+.address:focus {
+  border-color: #2a2a72;
+  box-shadow: 0 4px 12px rgba(42, 42, 114, 0.3);
+  background-color: #fff;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}

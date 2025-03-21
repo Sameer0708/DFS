@@ -1,0 +1,128 @@
+.button-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align buttons to the left */
+  margin: 10px;
+  gap: 10px; /* Space between buttons */
+}
+
+.image-button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #CCCCCC, #cccccc4e);
+  border-radius: 6px;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left; /* Align text to the left */
+  transition: box-shadow 0.3s ease;
+  width: 100%; /* Full width buttons */
+  max-width: 90pc; /* Optional: Limit button width */
+}
+
+.image-button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+.center {
+  margin: 40px;
+}
+
+/* .button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #009ffd, #2a2a72);
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 223, 253, 0.5) 0 3px 8px;
+} */
+.button {
+  background-color: #009ffd; /* Fallback color */
+  background-image: linear-gradient(-180deg, #009ffd, #2a2a72); /* Gradient */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Slightly rounded corners */
+  color: #ffffff; /* White text */
+  padding: 12px 24px; /* More padding for better clickability */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+.button:hover {
+  background-image: linear-gradient(-180deg, #2a2a72, #009ffd); /* Reverse gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 223, 253, 0.4); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.button:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+.button:disabled {
+  background-color: #cccccc; /* Gray background for disabled state */
+  background-image: none; /* Remove gradient for disabled state */
+  color: #666666; /* Dark gray text for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor for disabled state */
+  box-shadow: none; /* Remove shadow for disabled state */
+  transform: none; /* Remove lift effect for disabled state */
+}
+/* .address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 330px;
+  text-align: center;
+} */
+
+.address {
+  display: block; /* Ensure it takes full width */
+  margin: 20px auto; /* Center the input field */
+  height: 40px; /* Slightly taller for better usability */
+  width: 350px; /* Slightly wider */
+  padding: 10px 15px; /* Padding for text inside */
+  font-size: 16px; /* Larger font size */
+  color: #333; /* Dark text color */
+  background-color: #f9f9f9; /* Light background */
+  border: 2px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  outline: none; /* Remove default outline */
+  transition: all 0.3s ease; /* Smooth transition for hover/focus effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.address:hover {
+  border-color: #009ffd; /* Change border color on hover */
+  box-shadow: 0 4px 8px rgba(0, 159, 253, 0.2); /* Larger shadow on hover */
+}
+
+.address:focus {
+  border-color: #2a2a72; /* Darker border color on focus */
+  box-shadow: 0 4px 12px rgba(42, 42, 114, 0.3); /* Highlight shadow on focus */
+  background-color: #fff; /* White background on focus */
+}
+
+/* Optional: Add placeholder styling */
+.address::placeholder {
+  color: #999; /* Light gray placeholder text */
+  font-style: italic; /* Italic placeholder */
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}
